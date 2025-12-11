@@ -52,6 +52,7 @@
             </div>
         </form>
         
+        <a id="signup-link" href="FORGOT_PASS.php">Forgot Password?</a><br>
         <a id="signup-link" href="SIGN_UP.php">Don't have an account? Sign Up</a>
     </div>
 </body>
