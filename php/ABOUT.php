@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About - Iloilo Travelogue</title>
+
+        <!--LINKING STYLE SHEET-->
+           <link rel="stylesheet" href="../DESIGN.css">
+           <link rel="icon" href="../assets/logo.png" sizes="32x32" type="image/png">
+           <link rel="shortcut icon" href="../assets/logo.png">
+    </head>
+
+     <!--NAVIGATION-->
+    <body>
+
+        <div class = "homepage-wrapper">
+            <nav class ="navbar">
+            <div class="nav-links">
+                <a href="HOMEPAGE.php">Home</a>
+                <a href="VIEW_PROFILE.php">Profile</a>
+                <a href="REVIEWS.php">Reviews</a>
+                <a href="ABOUT.php">About Us</a>
+        </nav>
+
+        <div class = "about-wrapper">
+            <h1>About Us</h1>
+
+              <div class = "Background">
+                <h3>Background of the Website</h3>
+                <p> This website was created to showcase Iloilo's beauty, both the well-known tourist spots and the hidden gems only locals usually know about. We wanted a single place where travelers, students, and even Ilonggos themselves can easily discover what makes the province special. </p>
+
+
+                <h3>Purpose</h3>
+                <p> Our purpose is simple: to help people find Iloilo's destinations with ease. Whether you're looking for popular attractions, peaceful corners, food spots, or lesser known locations, this website serves as your guide in exploring and appreciating the heart of Iloilo. </p>
+             </div>
+        
+            <div class = "Member_list">
+                <h3> Members</h3>
+                <ul class = "Members"> 
+                    <li> French Mar V. Ballescas - Back End Developer, Documentation</li>
+                    <li> Danielle P. Ferrao - Front End Developer, Documentation</li>
+                    <li> Chesler F. Garbanzos - Back End Developer, Documentation</li>
+                    <li> Gianna P. Parrenas - Back End Developer, Documentation</li>
+                    <li> Maxs Ephraim O. Sevillano - Front End Developer, Documentation</li>
+                </ul> 
+            </div>
+       
+        </div>
+
+      
+    </body>

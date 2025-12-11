@@ -1,0 +1,444 @@
+/* GENERAL */
+
+* {
+    font-family: 'Trebuchet MS';
+}
+
+/* LOGIN PAGE INPUTS - PRIORITY */
+.login-wrapper input {
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 10px 0 !important;
+    border: 1px solid #ffc800 !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    background-color: white !important;
+}
+
+.login-wrapper input[type="submit"],
+.login-wrapper .btn {
+    background-color: rgb(255, 204, 0) !important;
+    color: black !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+#y-button {
+    margin-top: 10px;
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#error-message {
+    color: red;
+    display: block;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: #f8d7da !important;
+    border: 2px solid #dc3545 !important;
+    color: #721c24 !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    margin: 10px 0 !important;
+    max-width: 100% !important;
+}
+
+.alert-success {
+    background-color: #d4edda !important;
+    border: 2px solid #28a745 !important;
+    color: #155724 !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    margin: 10px 0 !important;
+    max-width: 100% !important;
+}
+
+
+body {
+    background-color: #7F5638;
+    background-image: url("assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#wrapper {
+    background-color: white;
+    width: 900px;
+    min-height: 500px;
+    padding: 70px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* LOGIN HTML */
+
+#logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px auto;
+    padding-bottom: 20px;
+}
+
+.login-wrapper {
+    background-color: white;
+    width: 320px;
+    min-height: 400px;
+    padding: 50px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-wrapper input[type="text"],
+.login-wrapper input[type="password"],
+.login-wrapper input[type="email"] {
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 10px 0 !important;
+    border: 1px solid #ffc800 !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    display: block !important;
+}
+
+.login-wrapper input[type="submit"] {
+    width: 100% !important;
+    padding: 10px 20px !important;
+    margin-top: 15px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    background-color: rgb(255, 204, 0) !important;
+    color: black !important;
+    cursor: pointer !important;
+    display: block !important;
+}
+
+#signup-link,
+#login-link {
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+
+/* INPUT FIELDS*/
+#email-input,
+#password-input,
+#name-input,
+#birthday-input,
+#repeat-password-input,
+.from-control,
+.form-control,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 2px 0 !important;
+    border: 1px solid #ffc800 !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+}
+
+.form-group {
+    margin-bottom: 10px !important;
+}
+
+.form-btn {
+    margin-top: 15px !important;
+}
+
+.btn,
+input[type="submit"] {
+    width: 100%;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    background-color: rgb(255, 204, 0) !important;
+    color: black !important;
+}
+
+.btn-primary {
+    background-color: rgb(255, 204, 0) !important;
+    color: black !important;
+}
+
+.Incorrect {
+    border: 2px solid red !important;
+    border-radius: 4px;
+}
+
+
+/* SIGN UP HTML */
+
+.signup-wrapper {
+    background-color: white;
+    width: 320px;
+    max-height: 550px;
+    padding: 50px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* FORGOT PASS HTML */
+
+
+/* NAVIGATION BAR */
+nav {
+    width: 100%;
+    float: left;
+  
+}
+
+.navbar {
+   position: relative;
+    width: 950px;
+    max-height: 100px;
+    padding: 25px;
+    background: hsl(63, 100%, 50%);
+    border-bottom: 4px solid #eaff009e;
+    box-shadow: 0 3px 0 #0000004c;
+    margin: 0;
+}
+
+
+
+.nav-links {
+    font-size: 25px;
+    max-width: 1000px;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+   transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+/* HOMEPAGE */
+
+.homepage-wrapper {
+    background-color: white;
+    width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+#homepage-content {
+    padding-left: 30px;
+    padding-top: 100px;
+}
+
+#search-results {
+    margin-top: 30px;
+}
+
+#clear-search {
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.destination-card {
+    background-color: #fff9e6;
+    border: 2px solid #ffc800;
+    border-radius: 8px;
+    max-width: 900px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.dest-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.dest-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #7F5638;
+}
+
+.dest-location {
+    color: #666;
+    margin: 5px 0 15px 0;
+}
+
+.destination-card p {
+    margin: 0 0 15px 0;
+}
+
+.destination-card a {
+    color: #7F5638;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.destination-card a:hover {
+    text-decoration: underline;
+}
+/* PROFILE */
+.profile-wrapper {
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+#edit-btn, 
+#logout-btn {
+    margin-top: 3px;
+    margin-left: 10px;
+    background-color: rgb(255, 204, 0);
+    float: left;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#delete-btn {
+    margin-top: 3px;
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: white;
+    float: left;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#search-field {
+    max-width: 500px;
+    margin: 2px 0;
+    border: 1px solid #ffc800;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#search-btn {
+    margin: auto 0;
+    margin-top: 3px;
+    margin-left: 10px;
+    max-width: 200px;
+    max-height: 100px;
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+}
+
+/* ABOUT PAGE */
+
+.about-wrapper {
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.Background {
+    padding-right: 50px;
+}
+
+/* REVIEW PAGE */
+
+.reviews-wrapper {
+    padding-left: 50px;
+    padding-top: 100px;
+
+}
+
+.destination-row {
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+#destination-select {
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+    width: 170px;
+}
+
+#review-title {
+    max-width: 500px;
+    margin: 10px 0;
+    padding-top: 30px;
+    border: 1px solid #ffc800;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#rating-wrapper {
+    margin-top: 10px;
+}
+
+#review-rating {
+    border: 1px solid #ffc800;
+}
+
+#review-body {
+    border: 1px solid #ffc800;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 500px;
+    height: 100px;
+}
+
+#post-review {
+    margin-top: 10px;
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+}
+
+#sort-select {
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+}
+
+.reviews-wrapper hr {
+  width: calc(100% + 50px); 
+  margin-left: -50px; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 204, 0);
+}

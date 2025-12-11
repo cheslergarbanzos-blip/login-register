@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iloilo Travelogue</title>
+       <link rel="stylesheet" href="../DESIGN.css">
+       <link rel="icon" href="../assets/logo.png" sizes="32x32" type="image/png">
+       <link rel="shortcut icon" href="../assets/logo.png">
+</head>
+
+<body>
+    <div class= "forgot-wrapper">
+        <div id = "wrapper">
+            <img id= "logo" src="../assets/logo.png">
+         <h1>Forgot Password</h1>
+        <p>Please enter your username and birthday to reset your password.</p>
+    
+    <form id="forgotForm" onsubmit="handleForgotPassword(event)">
+        <label for="username">Username:</label><br>
+        <input type="text" id="input-field" name="username" required><br><br>
+        
+        <label for="birthday">Birthday:</label><br>
+        <input type="date" id="input-field" name="birthday" required><br><br>
+        
+        <button id = "y-button" type="submit">Verify</button>
+        </form>
+    
+        <br>
+        <div id="result"></div>
+
+        <br>
+        <a href="LOGIN.html">Back to Login</a>
+        </div>
+       
+    </div>
+   
+
+    <script>
+        function handleForgotPassword(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const birthday = document.getElementById('birthday').value;
+            
+            // In a real application, this would verify the birthday with the server
+            console.log('Verifying birthday for user:', username);
+            console.log('Birthday entered:', birthday);
+            
+            // Hide the original form
+            document.getElementById('forgotForm').style.display = 'none';
+            
+            // Show new password fields
+            document.getElementById('result').innerHTML = '<p style="color: green;">Birthday verified! Please enter your new password.</p><br><label for="newPassword">New Password:</label><br><input type="password" id="newPassword" required><br><br><label for="confirmPassword">Confirm Password:</label><br><input type="password" id="confirmPassword" required><br><br><button onclick="resetPassword()">Reset Password</button>';
+        }
+        
+        function resetPassword() {
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (newPassword !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            if (newPassword.length < 8) {
+                alert('Password must be at least 8 characters long!');
+                return;
+            }
+            
+            alert('Password reset successfully! You can now login with your new password.');
+            console.log('Password reset completed');
+            
+            // Show the original form again and clear result
+            document.getElementById('forgotForm').style.display = 'block';
+            document.getElementById('forgotForm').reset();
+            document.getElementById('result').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
