@@ -95,7 +95,7 @@ if (isset($_SESSION['reset_user_id']) && $step == 1) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password - Iloilo Travelogue</title>
-    <link rel="stylesheet" href="../DESIGN.css">
+    <link rel="stylesheet" href="../DESIGN.css?v=2">
     <link rel="icon" href="../assets/logo.png" sizes="32x32" type="image/png">
     <link rel="shortcut icon" href="../assets/logo.png">
 </head>

@@ -6,7 +6,7 @@
         <title> Home - Iloilo Travelogue</title>
 
         <!--LINKING STYLE SHEET-->
-        <link rel="stylesheet" href="../DESIGN.css">
+        <link rel="stylesheet" href="../DESIGN.css?v=2">
         <link rel="icon" href="../assets/logo.png" sizes="32x32" type="image/png">
         <link rel="shortcut icon" href="../assets/logo.png">
     </head>
