@@ -62,9 +62,10 @@
 
 body {
     background-color: #7F5638;
-    background-image: url("assets/background.png");
+    background-image: url("../assets/background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #wrapper {
