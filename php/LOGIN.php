@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Iloilo Travelogue</title>
-    <link rel="stylesheet" href="../DESIGN.css?v=2">
+    <link rel="stylesheet" href="../DESIGN.css?v=4">
     <link rel="icon" href="../assets/logo.png" sizes="32x32" type="image/png">
     <link rel="shortcut icon" href="../assets/logo.png">
 </head>
@@ -52,7 +52,7 @@
             </div>
         </form>
         
-        <a id="signup-link" href="FORGOT_PASS.php">Forgot Password?</a><br>
+        <a id="forgot-link" href="FORGOT_PASS.php">Forgot Password?</a>
         <a id="signup-link" href="SIGN_UP.php">Don't have an account? Sign Up</a>
     </div>
 </body>

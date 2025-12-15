@@ -31,6 +31,14 @@
     padding: 10px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#y-button:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #error-message {
@@ -96,8 +104,8 @@ body {
     width: 320px;
     min-height: 400px;
     padding: 50px 35px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -114,6 +122,15 @@ body {
     border-radius: 4px !important;
     box-sizing: border-box !important;
     display: block !important;
+    transition: all 0.3s ease !important;
+}
+
+.login-wrapper input[type="text"]:focus,
+.login-wrapper input[type="password"]:focus,
+.login-wrapper input[type="email"]:focus {
+    border-color: #e6b800 !important;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.2) !important;
+    outline: none !important;
 }
 
 .login-wrapper input[type="submit"] {
@@ -126,11 +143,39 @@ body {
     color: black !important;
     cursor: pointer !important;
     display: block !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+}
+
+.login-wrapper input[type="submit"]:hover {
+    background-color: #e6b800 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+#forgot-link {
+    padding-top: 5px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #0066cc;
+    font-size: 14px;
 }
 
 #signup-link,
 #login-link {
     padding-top: 5px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    color: #0066cc;
+    font-size: 14px;
+}
+
+#signup-link:hover,
+#login-link:hover,
+#forgot-link:hover {
     text-decoration: none;
 }
 
@@ -192,8 +237,8 @@ input[type="submit"] {
     width: 320px;
     max-height: 550px;
     padding: 50px 35px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -215,9 +260,9 @@ nav {
     width: 950px;
     max-height: 100px;
     padding: 25px;
-    background: hsl(63, 100%, 50%);
-    border-bottom: 4px solid #eaff009e;
-    box-shadow: 0 3px 0 #0000004c;
+    background: linear-gradient(135deg, #ffed4e 0%, #ffc800 100%);
+    border-bottom: 4px solid #e6b800;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     margin: 0;
 }
 
@@ -235,11 +280,29 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: black;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .nav-links a:hover {
-   transform: scale(1.1);
-    transition: transform 0.2s ease;
+    transform: translateY(-2px);
+    color: #7F5638;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #7F5638;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 
