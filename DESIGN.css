@@ -321,6 +321,20 @@ nav {
     padding-top: 100px;
 }
 
+#search-form {
+    max-width: 600px;
+}
+
+#search-btn {
+    width: 100%;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    background-color: rgb(255, 204, 0) !important;
+    color: black !important;
+}
+
 #search-results {
     margin-top: 30px;
 }
@@ -442,61 +456,164 @@ nav {
 }
 /* PROFILE */
 .profile-wrapper {
-    padding-left: 50px;
+    padding: 50px;
     padding-top: 100px;
+    min-height: calc(100vh - 100px);
 }
 
-#edit-btn, 
-#logout-btn {
-    margin-top: 3px;
-    margin-left: 10px;
-    background-color: rgb(255, 204, 0);
-    float: left;
-    border-radius: 5px;
-    padding: 8px 15px;
-    border: none;
-    cursor: pointer;
+.profile-container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-wrapper h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #c49b63;
+    padding-bottom: 15px;
+    font-size: 36px;
+}
+
+#profile-content {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 50px 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-field {
+    margin-bottom: 35px;
+    display: block;
+    clear: both;
+}
+
+.profile-field label {
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 140px;
+}
+
+.profile-field p {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #c49b63;
+    min-width: 300px;
+}
+
+/* Button Container */
+.profile-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 15px;
+    clear: both;
+}
+
+#logout-btn,
+#edit-btn,
+#delete-btn {
+    margin: 0 !important;
+    float: none !important;
+    flex: 1;
+}
+
+#logout-btn,
+#edit-btn {
+    background-color: rgb(255, 204, 0) !important;
+    color: black !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 12px 20px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
 }
 
 #delete-btn {
-    margin-top: 3px;
-    margin-left: 10px;
-    background-color: #dc3545;
-    color: white;
-    float: left;
-    border-radius: 5px;
-    padding: 8px 15px;
-    border: none;
-    cursor: pointer;
+    background-color: #dc3545 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 12px 20px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
 }
 
-#search-field {
-    max-width: 500px;
-    margin: 2px 0;
-    border: 1px solid #ffc800;
-    border-radius: 4px;
-    box-sizing: border-box;
+#logout-btn:hover,
+#edit-btn:hover {
+    background-color: #e6b800 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
-#search-btn {
-    margin: auto 0;
-    margin-top: 3px;
-    margin-left: 10px;
-    max-width: 200px;
-    max-height: 100px;
-    background-color: rgb(255, 204, 0);
-    border-radius: 5px;
+#delete-btn:hover {
+    background-color: #2336c8 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* ABOUT PAGE */
-
-.about-wrapper {
-    padding-left: 50px;
-    padding-top: 100px;
+#edit-form {
+    background-color: white;
+    border: 3px solid #e6b800;
+    border-radius: 10px;
+    padding: 50px 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.Background {
-    padding-right: 50px;
+#edit-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #c49b63;
+    padding-bottom: 15px;
+}
+
+#edit-form .form-group {
+    margin-bottom: 25px;
+}
+
+#edit-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+#edit-form input {
+    width: 100% !important;
+    padding: 10px !important;
+    border: 2px solid #ffc800 !important;
+    border-radius: 5px !important;
+    font-size: 16px;
+}
+
+#edit-form button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#edit-form button[type="button"] {
+    width: 100%;
+    background-color: #6c757d !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    margin-left: 0 !important;
+    margin-top: 10px !important;
 }
 
 /* REVIEW PAGE */
@@ -617,4 +734,12 @@ nav {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: rgb(255, 204, 0);
+}
+
+
+/* ABOUT US */
+.aboutus-wrapper {
+    padding-left: 50px;
+    padding-top: 100px;
+    min-height: calc(100vh - 100px);
 }

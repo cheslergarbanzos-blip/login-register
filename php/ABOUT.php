@@ -13,6 +13,15 @@
 
      <!--NAVIGATION-->
     <body>
+        <?php
+        session_start();
+        
+        // Check if user is logged in
+        if (!isset($_SESSION["user_id"])) {
+            header("Location: LOGIN.php");
+            exit();
+        }
+        ?>
 
         <div class = "homepage-wrapper">
             <nav class ="navbar">
@@ -47,6 +56,9 @@
             </div>
        
         </div>
+    </div>
+    </body>
+</html>
 
       
     </body>
