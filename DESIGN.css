@@ -479,7 +479,7 @@ nav {
 
 #profile-content {
     background-color: white;
-    border: 3px solid black;
+    border: 2px solid #ffc800;
     border-radius: 10px;
     padding: 50px 80px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -738,8 +738,139 @@ nav {
 
 
 /* ABOUT US */
-.aboutus-wrapper {
-    padding-left: 50px;
+/* ABOUT PAGE - Updated Layout */
+.about-wrapper {
+    padding: 50px;
     padding-top: 100px;
-    min-height: calc(100vh - 100px);
+    max-width: 100%;
+}
+
+.about-wrapper h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.about-wrapper h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Background Section - Text on Left, Image on Right */
+.background-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.abt-info {
+    flex: 1;
+    max-width: 450px;
+}
+
+.destination-placeholder {
+    width: 400px;
+    height: 180px;
+    background-color: #00d4ff;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Purpose Section - Image on Left, Text on Right */
+.purpose-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.abt-purpose {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* Members Section */
+.member-section {
+    margin-top: 60px;
+}
+
+.member-section h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.members-grid {
+    --member-width: 220px;
+    display: grid;
+    grid-template-columns: repeat(3, var(--member-width));
+    gap: 50px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.member-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Place bottom row items into grid columns to avoid absolute positioning/overflow */
+.member-item:nth-child(4) {
+    grid-column: 1;
+}
+.member-item:nth-child(5) {
+    grid-column: 2;
+}
+
+.member-circle {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.member-info {
+    text-align: center;
+}
+
+.member-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.member-info p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.member-info p:last-child {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .members-grid {
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .member-item:nth-child(1),
+    .member-item:nth-child(2),
+    .member-item:nth-child(3),
+    .member-item:nth-child(4),
+    .member-item:nth-child(5) {
+        position: static;
+        width: 45%;
+    }
 }
