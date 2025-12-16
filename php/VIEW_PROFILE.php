@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Profile - Iloilo Travelogue</title>
-        <link rel="stylesheet" href="../DESIGN.css?v=4">
+        <link rel="stylesheet" href="../DESIGN.css?v=5">
         <link rel="icon" href="../assets/logo.png" sizes="32x32" type="image/png">
         <link rel="shortcut icon" href="../assets/logo.png">
     </head>
