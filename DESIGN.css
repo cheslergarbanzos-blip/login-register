@@ -776,6 +776,15 @@ nav {
     background-color: #00d4ff;
     border-radius: 8px;
     flex-shrink: 0;
+    object-fit: cover;
+}
+
+.about-image {
+    width: 350px;
+    height: 200px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    object-fit: cover;
 }
 
 /* Purpose Section - Image on Left, Text on Right */

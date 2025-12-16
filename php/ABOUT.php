@@ -39,12 +39,12 @@
                         <h3>Background of the Website</h3>
                         <p>This website was created to showcase Iloilo's beauty, both the well-known tourist spots and the hidden gems only locals usually know about. We wanted a single place where travelers, students, and even Ilonggos themselves can easily discover what makes the province special.</p>
                     </div>
-                    <img src="../assets/Miagaochurch.jpg" alt="Purpose" class="destination-placeholder">
+                    <img src="../assets/skyline.jpg" alt="Purpose" class="about-image">
                 </div>
 
                 <!-- Purpose Section -->
                 <div class="purpose-section">
-                    <img src="../assets/Festive.jpg" alt="Purpose" class="destination-placeholder">
+                    <img src="../assets/Festive.jpg" alt="Purpose" class="about-image">
                     <div class="abt-purpose">
                         <h3>Purpose</h3>
                         <p>Our purpose is simple: to help people find Iloilo's destinations with ease. Whether you're looking for popular attractions, peaceful corners, food spots, or lesser known locations, this website serves as your guide in exploring and appreciating the heart of Iloilo.</p>
@@ -64,7 +64,7 @@
                         </div>
 
                         <div class="member-item">
-                            <img src="../assets/members/danielle.jpg" alt="Member 1" class="member-circle">
+                            <img src="../assets/members/danielle.png" alt="Member 1" class="member-circle">
                             <div class="member-info">
                                 <p>Danielle P. Ferrao</p>
                                 <p>Front End Developer, Documentation</p>
@@ -80,7 +80,7 @@
                         </div>
 
                         <div class="member-item">
-                            <img src="../assets/members/gianna.jpg" alt="Member 1" class="member-circle">
+                            <img src="../assets/members/gianna.jpeg" alt="Member 1" class="member-circle">
                             <div class="member-info">
                                 <p>Gianna P. Parreñas</p>
                                 <p>Back End Developer, Documentation</p>
