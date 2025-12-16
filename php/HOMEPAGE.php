@@ -26,8 +26,8 @@
         $popular_reviews = [];
         $sql = "SELECT r.*, u.full_name FROM reviews r 
                 JOIN users u ON r.user_id = u.id 
-                ORDER BY r.likes DESC, r.created_at DESC 
-                LIMIT 3";
+                ORDER BY r.rating DESC, r.likes DESC, r.created_at DESC 
+                LIMIT 5";
         $result = mysqli_query($conn, $sql);
         if ($result) {
             $popular_reviews = mysqli_fetch_all($result, MYSQLI_ASSOC);
