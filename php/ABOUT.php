@@ -19,7 +19,8 @@
             exit();
         }
         ?>
-
+        
+        <!--NAVIGATION BAR-->
         <div class="homepage-wrapper">
             <nav class="navbar">
                 <div class="nav-links">

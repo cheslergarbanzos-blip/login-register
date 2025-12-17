@@ -58,7 +58,7 @@
         
         <div class = "homepage-wrapper">
             
-    <!--NAVIGATION-->
+    <!--NAVIGATION BAR-->
                <nav class ="navbar">
             <div class="nav-links">
                 <a href="HOMEPAGE.php">Home</a>

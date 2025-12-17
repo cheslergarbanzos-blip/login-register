@@ -14,6 +14,7 @@
         <img id="logo" src="../assets/logo.png">
         <h1>Login</h1>
 
+        <!--LOGIN VERIFIER-->
         <?php
         session_start();
         if (isset($_POST["login"])) {
@@ -31,6 +32,8 @@
                     $_SESSION["user_email"] = $user["email"];
                     header("Location: HOMEPAGE.php");
                     die();
+                    
+                //Error messages
                 } else {
                     echo "<div class='alert alert-danger'>Password does not match</div>";
                 }
@@ -40,6 +43,7 @@
         }
         ?>
         
+        <!--USER INPUTS-->
         <form action="LOGIN.php" method="post">
             <div class="form-group">
                 <input type="text" class= "from-control" name="email" placeholder="Email">

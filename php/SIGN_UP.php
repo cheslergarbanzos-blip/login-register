@@ -17,6 +17,7 @@
             
             <form action= "SIGN_UP.php" method= "post">
 
+                 <!--SIGN UP VERIFIER-->
                 <?php
                 if (isset($_POST["submit"])) {
                     $fullname = $_POST["fullname"];
@@ -68,7 +69,7 @@
                     }
                 }
                 ?>
-
+                <!--USER INPUTS-->
                 <div class="form-group">
                     <input type="text" id="name-input" name="fullname" placeholder="Full Name">
                 </div>

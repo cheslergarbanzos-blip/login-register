@@ -12,7 +12,7 @@
 </head>
 
 <body>
- 
+ <!--NAVIGATION BAR-->
 <div class = homepage-wrapper>
    <nav class="navbar">
     <div class="nav-links">
@@ -22,6 +22,7 @@
       <a href="ABOUT.php">About Us</a>
     </div>
   </nav>
+  
  <div class="reviews-wrapper">
     <h1>Iloilo Travelogue — Community Reviews</h1>
 

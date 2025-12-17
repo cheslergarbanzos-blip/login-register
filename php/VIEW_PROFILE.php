@@ -9,35 +9,33 @@
         <link rel="shortcut icon" href="../assets/logo.png">
     </head>
 
-     <!--NAVIGATION-->
     <body>
-        <!-- Put this inside your <body> tag, replacing the existing content -->
+    <?php
+    session_start();
 
-<?php
-session_start();
+    // Check if user is logged in
+    if (!isset($_SESSION["user_id"])) {
+        header("Location: LOGIN.php");
+        exit();
+    }
 
-// Check if user is logged in
-if (!isset($_SESSION["user_id"])) {
-    header("Location: LOGIN.php");
-    exit();
-}
+    // Get user data from database
+    require_once "../data/database.php";
+    $user_id = $_SESSION["user_id"];
+    $sql = "SELECT * FROM users WHERE id = ?";
+    $stmt = mysqli_stmt_init($conn);
 
-// Get user data from database
-require_once "../data/database.php";
-$user_id = $_SESSION["user_id"];
-$sql = "SELECT * FROM users WHERE id = ?";
-$stmt = mysqli_stmt_init($conn);
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "i", $user_id);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+        $user = mysqli_fetch_assoc($result);
+    } else {
+        die("Error loading profile");
+    }
+    ?>
 
-if (mysqli_stmt_prepare($stmt, $sql)) {
-    mysqli_stmt_bind_param($stmt, "i", $user_id);
-    mysqli_stmt_execute($stmt);
-    $result = mysqli_stmt_get_result($stmt);
-    $user = mysqli_fetch_assoc($result);
-} else {
-    die("Error loading profile");
-}
-?>
-
+<!--NAVIGATION BAR-->
 <div class="homepage-wrapper">
     <nav class="navbar">
         <div class="nav-links">
